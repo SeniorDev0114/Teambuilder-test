@@ -5,8 +5,7 @@ Here is test tasks:
 4. At product detail page, you should display "Buy now" text at button which is next to "Add to Cart" button.
 5. At product detail page, you should make below product horizontel list to flow from right to left.
 
-Submission Requirements (Must provide both):
-- Source Code Link: A shareable public link to your code (e.g., a CodeSandbox or CodePen project is preferred).
+Submission Requirements:
 - Execution Video: A short screen recording (max 60 seconds) that demonstrates your solution working correctly. Please use a free tool like Loom or Vimeo Record.
 	In your video, please quickly show above tasks result.
 
