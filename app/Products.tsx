@@ -19,6 +19,7 @@ const Products = ({ products, gap }: ProductsProps) => {
   const [update, setUpdate] = useState<boolean>(false);
 
   const imageProps = useNextSanityImage(client, products.image[0]);
+  const jpy = new Intl.NumberFormat("ja-JP", { style: "currency", currency: "JPY" });
 
   useEffect(() => {
     setIsloaded(true);
@@ -68,9 +69,9 @@ const Products = ({ products, gap }: ProductsProps) => {
           <p> {products.name} </p>
           <div className=" flex gap-3">
             <span className=" text-sm text-lightGray line-through ">
-              ${products.oldPrice}
+              {jpy.format(products.oldPrice)}
             </span>
-            <b className=" text-zinc-900 "> ${products.price} </b>
+            <b className=" text-zinc-900 "> {jpy.format(products.price)} </b>
           </div>
         </nav>
 
